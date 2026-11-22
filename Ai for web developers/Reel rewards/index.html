@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!-- Tells browser this is HTML5 -->
+<html lang="en"> <!-- Starts HTML document -->
+<head> <!-- Contains page settings -->
+    <meta charset="UTF-8"> <!-- Supports different characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+    <title>Promo Code Discount</title> <!-- Browser tab title -->
+    <link rel="stylesheet" href="style.css"> <!-- Connects CSS file -->
+    <script src="script.js" defer></script> <!-- Loads JS after HTML parsing -->
+</head> <!-- Ends head section -->
+
+<body> <!-- Starts visible webpage -->
+    <div class="container"> <!-- Main content box -->
+        <h1>Ticket Booking</h1> <!-- Main heading -->
+
+        <p id="finalPrice">Ticket Price: $50</p> <!-- Shows ticket price -->
+
+        <form id="promoForm"> <!-- Creates promo form -->
+            <label for="promoCode">Enter Promo Code:</label> <!-- Input label -->
+
+            <input
+                type="text"
+                id="promoCode"
+                placeholder="Enter HALF"
+                autocomplete="off"
+            > <!-- Accepts promo code -->
+
+            <button type="submit">Apply Discount</button> <!-- Submits form -->
+        </form> <!-- Ends form -->
+
+        <p id="message" aria-live="polite"></p> <!-- Shows success or error -->
+    </div> <!-- Ends main box -->
+</body> <!-- Ends visible webpage -->
+</html> <!-- Ends HTML document -->

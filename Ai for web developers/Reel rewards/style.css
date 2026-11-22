@@ -1,0 +1,149 @@
+
+/* ===== 1. PAGE BACKGROUND ===== */
+body {
+    font-family: Arial, sans-serif; /* Clean font */
+    margin: 0; /* Remove default margin */
+    min-height: 100vh; /* Full screen height */
+
+    /* Beautiful concert background */
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 80, 220, 0.5), transparent 25%),
+        radial-gradient(circle at 85% 15%, rgba(50, 130, 255, 0.6), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(130, 40, 255, 0.6), transparent 35%),
+        linear-gradient(135deg, #10002b, #240046, #3c096c, #10002b);
+
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    padding: 20px; /* Space around card */
+    box-sizing: border-box; /* Include padding */
+}
+
+/* ===== 2. MAIN BOOKING CARD ===== */
+.container {
+    background: rgba(255, 255, 255, 0.96); /* White glass card */
+    padding: 40px; /* Inner spacing */
+    border-radius: 22px; /* Rounded corners */
+
+    width: 100%; /* Responsive width */
+    max-width: 450px; /* Maximum card size */
+
+    text-align: center; /* Center content */
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4); /* Deep shadow */
+
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Soft border */
+}
+
+/* ===== 3. HEADING ===== */
+h1 {
+    color: #240046; /* Deep purple */
+    font-size: 34px; /* Large heading */
+    margin-bottom: 25px; /* Space below */
+}
+
+/* ===== 4. TICKET PRICE ===== */
+#finalPrice {
+    color: #6a11cb; /* Purple price */
+    font-size: 25px; /* Large price */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 30px; /* Space below */
+}
+
+/* ===== 5. INPUT LABEL ===== */
+label {
+    display: block; /* Separate line */
+    color: #333; /* Dark text */
+    font-size: 17px; /* Label size */
+    margin-bottom: 12px; /* Space below */
+}
+
+/* ===== 6. PROMO INPUT ===== */
+input {
+    width: 100%; /* Full width */
+    padding: 15px; /* Inner spacing */
+
+    border: 2px solid #e0d4f7; /* Light purple border */
+    border-radius: 12px; /* Rounded corners */
+
+    font-size: 16px; /* Text size */
+    box-sizing: border-box; /* Prevent overflow */
+
+    outline: none; /* Remove default outline */
+    transition: 0.3s; /* Smooth effect */
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #7b2ff7; /* Purple border */
+    box-shadow: 0 0 12px rgba(123, 47, 247, 0.3); /* Glow */
+}
+
+/* Disabled input */
+input:disabled {
+    background: #eeeeee; /* Grey background */
+    cursor: not-allowed; /* Disabled cursor */
+}
+
+/* ===== 7. BUTTON ===== */
+button {
+    background: linear-gradient(135deg, #7b2ff7, #4a00e0); /* Purple gradient */
+
+    color: white; /* White text */
+    padding: 15px 30px; /* Button spacing */
+
+    border: none; /* Remove border */
+    border-radius: 12px; /* Rounded corners */
+
+    font-size: 17px; /* Button text size */
+    font-weight: bold; /* Bold text */
+
+    cursor: pointer; /* Clickable cursor */
+    margin-top: 20px; /* Space above */
+
+    transition: 0.3s; /* Smooth animation */
+}
+
+/* Button hover */
+button:hover {
+    background: linear-gradient(135deg, #4a00e0, #7b2ff7); /* Change gradient */
+    transform: translateY(-3px); /* Move upwards */
+    box-shadow: 0 8px 20px rgba(123, 47, 247, 0.4); /* Glow */
+}
+
+/* Button click */
+button:active {
+    transform: scale(0.97); /* Click effect */
+}
+
+/* ===== 8. MESSAGE ===== */
+#message {
+    font-size: 15px; /* Message size */
+    font-weight: bold; /* Bold message */
+    margin-top: 20px; /* Space above */
+}
+
+/* ===== 9. MOBILE RESPONSIVE ===== */
+@media (max-width: 480px) {
+
+    /* Smaller card */
+    .container {
+        padding: 25px; /* Reduce spacing */
+    }
+
+    /* Smaller heading */
+    h1 {
+        font-size: 27px; /* Fit mobile */
+    }
+
+    /* Smaller price */
+    #finalPrice {
+        font-size: 21px; /* Fit mobile */
+    }
+
+    /* Full-width button */
+    button {
+        width: 100%; /* Fill card width */
+    }
+}
