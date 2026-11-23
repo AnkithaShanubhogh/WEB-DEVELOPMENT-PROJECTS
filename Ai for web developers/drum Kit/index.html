@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic webpage settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Interactive Drum Kit</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Main heading -->
+    <header>
+        <h1>🥁 Drum Kit</h1>
+        <p>Click a drum or press its keyboard key!</p>
+    </header>
+
+    <!-- Main drum kit section -->
+    <main>
+
+        <div class="drum-container">
+
+            <!-- Drum 1: Boom -->
+            <button class="drum" data-sound="boom" data-key="a">
+                BOOM
+                <span>A</span>
+            </button>
+
+            <!-- Drum 2: Clap -->
+            <button class="drum" data-sound="clap" data-key="s">
+                CLAP
+                <span>S</span>
+            </button>
+
+            <!-- Drum 3: Hi-hat -->
+            <button class="drum" data-sound="hihat" data-key="d">
+                HI-HAT
+                <span>D</span>
+            </button>
+
+            <!-- Drum 4: Kick -->
+            <button class="drum" data-sound="kick" data-key="f">
+                KICK
+                <span>F</span>
+            </button>
+
+            <!-- Drum 5: Open hat -->
+            <button class="drum" data-sound="openhat" data-key="g">
+                OPEN HAT
+                <span>G</span>
+            </button>
+
+            <!-- Drum 6: Ride -->
+            <button class="drum" data-sound="ride" data-key="h">
+                RIDE
+                <span>H</span>
+            </button>
+
+            <!-- Drum 7: Snare -->
+            <button class="drum" data-sound="snare" data-key="j">
+                SNARE
+                <span>J</span>
+            </button>
+
+            <!-- Drum 8: Tink -->
+            <button class="drum" data-sound="tink" data-key="k">
+                TINK
+                <span>K</span>
+            </button>
+
+            <!-- Drum 9: Tom -->
+            <button class="drum" data-sound="tom" data-key="l">
+                TOM
+                <span>L</span>
+            </button>
+
+        </div>
+
+        <!-- Display playback status -->
+        <p id="message" aria-live="polite">
+            Ready to play!
+        </p>
+
+    </main>
+
+    <!-- Preload all nine drum sounds -->
+
+    <audio id="boom" src="drum_kit_sounds/sounds/boom.wav" preload="auto"></audio>
+    <audio id="clap" src="drum_kit_sounds/sounds/clap.wav" preload="auto"></audio>
+    <audio id="hihat" src="drum_kit_sounds/sounds/hihat.wav" preload="auto"></audio>
+    <audio id="kick" src="drum_kit_sounds/sounds/kick.wav" preload="auto"></audio>
+    <audio id="openhat" src="drum_kit_sounds/sounds/openhat.wav" preload="auto"></audio>
+    <audio id="ride" src="drum_kit_sounds/sounds/ride.wav" preload="auto"></audio>
+    <audio id="snare" src="drum_kit_sounds/sounds/snare.wav" preload="auto"></audio>
+    <audio id="tink" src="drum_kit_sounds/sounds/tink.wav" preload="auto"></audio>
+    <audio id="tom" src="drum_kit_sounds/sounds/tom.wav" preload="auto"></audio>
+
+</body>
+</html>
